@@ -1,0 +1,69 @@
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.env
+.env.local
+.env.*.local
+
+# === Logs ===
+logs/
+*.log
+logs/*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# === Editor / IDE ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === OS generated files ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# === Coverage / Testing ===
+coverage/
+.nyc_output/
+*.lcov
+
+# === Build / Dist ===
+dist/
+build/
+tmp/
+temp/
+
+# === Docker ===
+docker-compose.override.yml
+*.env.docker.local
+
+# === Misc ===
+*.bak
+*.swp
+*.swo
+*.orig
+*.rej
+
+# === Optional backups ===
+*.tar
+*.zip
+*.gz
+*.tgz
+
+# === Debug ===
+*.tgz
+debug.log
+
+# === Lockfiles (optional) ===
+# Uncomment if your team prefers not to commit lockfiles
+# package-lock.json
+# yarn.lock
