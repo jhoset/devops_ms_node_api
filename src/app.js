@@ -10,7 +10,7 @@ app.use(express.json());
  * GET /
  */
 app.get("/", (req, res) => {
-    res.json({ message: "API devops_ms_node_api OK" });
+    res.json({message: "API devops_ms_node_api OK"});
 });
 
 /**
@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
  * If 'name' is not provided, returns a 400 Bad Request error.
  */
 app.get("/hello", (req, res) => {
-    const { name } = req.query; // Extract the query parameter
+    const {name} = req.query; // Extract the query parameter
 
     if (!name) {
         return res.status(400).json({
@@ -30,7 +30,7 @@ app.get("/hello", (req, res) => {
     }
 
     res.json({
-        message: `Hello, ${name}! Welcome to the DevOps API 👋`,
+        message: `Hello, ${name}! \n Welcome to the NodeJs API 👋`,
     });
 });
 
