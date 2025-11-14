@@ -5,6 +5,8 @@ const app = express();
 // Middleware to parse JSON requests (useful for POST/PUT in the future)
 app.use(express.json());
 
+const greetingMessage = process.env.GREETING_MESSAGE || 'Hello 😊!';
+
 /**
  * Health check endpoint to verify the API is running.
  * GET /
@@ -30,7 +32,7 @@ app.get("/hello", (req, res) => {
     }
 
     res.json({
-        message: `Hello, ${name}! \n Welcome to the NodeJs API 👋`,
+        message: `${greetingMessage} -> ${name}! \n Welcome to the NodeJs API 👋`,
     });
 });
 
